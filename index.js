@@ -21,8 +21,8 @@ Promise.all(promises)
     let map = L.map('map').setView([35, 105], 5);
 
     // Add a tile layer to the map for displaying the map tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+      attribution: 'Map data &copy; CartoDB'
     }).addTo(map);
     const leafletIcon = L.icon ({
       iconUrl: "./MQ.jpg",
